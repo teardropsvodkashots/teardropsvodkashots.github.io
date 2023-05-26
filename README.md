@@ -1,1 +1,0 @@
-# teardropsvodkashots.github.io

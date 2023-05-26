@@ -1,0 +1,403 @@
+body {
+    background-color: #3F0071;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 7%;
+    padding-right: 7%;
+    margin: 0%;
+}
+
+.row-cols-1 {
+    justify-content: center;
+    text-align: center;
+}
+
+.flamer {
+    position: inherit;
+    top: 35px;
+    left: -9px;
+    margin: 80px auto;
+    width: 30px;
+    height: 30px;
+    transform-origin: center bottom;
+    animation-name: flicker;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    visibility: hidden;
+}
+
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+
+.yellow {
+    left: 5px;
+    width: 10px;
+    height: 11px;
+    background: gold;
+    box-shadow: 0px 0px 3px 1px gold;
+}
+
+.orange {
+    left: 3px;
+    width: 13px;
+    height: 14px;
+    background: orange;
+    box-shadow: 0px 0px 3px 1px orange;
+}
+
+.red {
+    left: 1.2px;
+    width: 16px;
+    height: 17px;
+    background: OrangeRed;
+    box-shadow: 0px 0px 1.2px 1px OrangeRed;
+}
+
+.white {
+    left: 5px;
+    bottom: -1px;
+    width: 10px;
+    height: 11px;
+    background: white;
+    box-shadow: 0px 0px 3px 1px white;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blue {
+    width: 3px;
+    height: 3px;
+    left: 8px;
+    bottom: -8px;
+    background: SlateBlue;
+    box-shadow: 0px 0px 5px 3px SlateBlue;
+}
+
+@keyframes flicker {
+    0% {
+        transform: rotate(-1deg);
+    }
+    20% {
+        transform: rotate(1deg);
+    }
+    40% {
+        transform: rotate(-1deg);
+    }
+    60% {
+        transform: rotate(1deg) scaleY(1.04);
+    }
+    80% {
+        transform: rotate(-2deg) scaleY(0.92);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+.string {
+    position: absolute;
+    top: 0;
+    width: 1.5px;
+    height: 150px;
+    background: black;
+}
+
+.lamp {
+    position: inherit;
+    left: -2.6rem;
+    width: 85px;
+    height: 60px;
+}
+
+#string0 {
+    position: absolute;
+    margin-left: 2%;
+}
+
+#string1 {
+    position: absolute;
+    margin-left: 10%;
+    height: 370px;
+}
+
+#string2 {
+    position: absolute;
+    margin-left: 18%;
+    height: 240px;
+}
+
+#string3 {
+    position: absolute;
+    margin-left: 26%;
+    height: 100px;
+}
+
+#string4 {
+    position: absolute;
+    margin-left: 34%;
+    height: 300px;
+}
+
+#string5 {
+    position: absolute;
+    margin-left: 42%;
+    height: 400px;
+}
+
+#string6 {
+    position: absolute;
+    margin-left: 50%;
+    height: 300px;
+}
+
+#string7 {
+    position: absolute;
+    margin-left: 58%;
+    height: 100px;
+}
+
+#string8 {
+    position: absolute;
+    margin-left: 66%;
+    height: 240px;
+}
+
+#string9 {
+    position: absolute;
+    margin-left: 74%;
+    height: 370px;
+}
+
+#string10 {
+    position: absolute;
+    margin-left: 82%;
+    height: 150px;
+}
+
+#lamp0 {
+    top: 150px;
+}
+
+#lamp1 {
+    top: 370px;
+}
+
+#lamp2 {
+    top: 240px;
+}
+
+#lamp3 {
+    top: 100px;
+}
+
+#lamp4 {
+    top: 300px;
+}
+
+#lamp5 {
+    top: 400px;
+}
+
+#lamp6 {
+    top: 300px;
+}
+
+#lamp7 {
+    top: 100px;
+}
+
+#lamp8 {
+    top: 240px;
+}
+
+#lamp9 {
+    top: 370px;
+}
+
+#lamp10 {
+    top: 150px;
+}
+
+#flamer0 {
+    top: 35px;
+}
+
+#flamer1 {
+    top: 255px;
+}
+
+#flamer2 {
+    top: 125px;
+}
+
+#flamer3 {
+    top: -15px;
+}
+
+#flamer4 {
+    top: 185px;
+}
+
+#flamer5 {
+    top: 285px;
+}
+
+#flamer6 {
+    top: 185px;
+}
+
+#flamer7 {
+    top: -15px;
+}
+
+#flamer8 {
+    top: 125px;
+}
+
+#flamer9 {
+    top: 255px;
+}
+
+#flamer10 {
+    top: 35px;
+}
+
+.button-77 {
+    top: 600px;
+    align-self: center;
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 25px 70px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .button-77 {
+        padding: 25px 32px;
+    }
+}
+
+.button-77:before,
+.button-77:after {
+    border-radius: 80px;
+}
+
+.button-77:before {
+    background-color: rgba(249, 58, 19, .32);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.button-77:after {
+    background-color: initial;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+    color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+.button-77:disabled {
+    cursor: default;
+    opacity: .24;
+}
+
+@media (max-width:649px) {
+    body {
+        visibility: hidden;
+        background-color: #ccc;
+    }
+    .flamer0,
+    .flamer1,
+    .flamer2,
+    .flamer3,
+    .flamer4,
+    .flamer5,
+    .flamer6,
+    .flamer7,
+    .flamer8,
+    .flamer9,
+    .flamer10 {
+        visibility: hidden;
+    }
+}
